@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Adicionar Produto</title>
+</head>
+<body>
+    <h1>Adicionar Produto</h1>
+    <form method="post">
+        <label>Nome do Produto: <input type="text" name="product_name"></label><br>
+        <label>Descrição: <textarea name="product_description"></textarea></label><br>
+        <label>Preço: <input type="text" name="product_price"></label><br>
+        <input type="submit" value="Adicionar Produto">
+    </form>
+    <p><a href="{{ url_for('dashboard') }}">Voltar ao Dashboard</a></p>
+</body>
+</html>
